@@ -1,0 +1,9 @@
+node_modules/
+playwright-report/
+.local-browsers/
+dist/
+*.log
+.env.*
+coverage/
+/.idea
+.DS_Store

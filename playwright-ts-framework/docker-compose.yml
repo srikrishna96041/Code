@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  tests:
+    build: .
+    volumes:
+      - ./:/work
+    environment:
+      - ENV=test
+    command: npx playwright test --project=chromium --reporter=html

@@ -1,0 +1,17 @@
+{
+  "name": "playwright-ts-framework",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test  --workers=10",
+    "test:ci": "PLAYWRIGHT_BROWSERS_PATH=./.local-browsers npx playwright install --with-deps && npx playwright test --project=chromium --reporter=html",
+    "show-report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.36.0",
+    "@playwright/mcp": "^0.0.68",
+    "@types/node": "^25.3.1",
+    "dotenv": "^16.0.0",
+    "typescript": "^4.9.5"
+  }
+}
